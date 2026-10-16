@@ -1,0 +1,111 @@
+[
+  {
+    "name": "lower_boundaries",
+    "input": "1 0\n1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "k_and_a_upper",
+    "input": "1 9\n1000000000\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "n_upper",
+    "input": "100 0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "n_below",
+    "input": "0 0\n",
+    "expected_status": "invalid",
+    "expected_reason": "n_range"
+  },
+  {
+    "name": "n_above",
+    "input": "101 0\n",
+    "expected_status": "invalid",
+    "expected_reason": "n_range"
+  },
+  {
+    "name": "k_below",
+    "input": "1 -1\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "k_range"
+  },
+  {
+    "name": "k_above",
+    "input": "1 10\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "k_range"
+  },
+  {
+    "name": "a_below",
+    "input": "1 0\n0\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_range"
+  },
+  {
+    "name": "a_above",
+    "input": "1 0\n1000000001\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_range"
+  },
+  {
+    "name": "a_leading_zero",
+    "input": "1 0\n01\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_leading_zero"
+  },
+  {
+    "name": "a_signed_leading_zero",
+    "input": "1 0\n+01\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_leading_zero"
+  },
+  {
+    "name": "header_leading_zeros_allowed",
+    "input": "001 00\n1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "plus_on_a_allowed",
+    "input": "\n+01\t+0 \n+1\n\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "missing_header",
+    "input": "1\n",
+    "expected_status": "invalid",
+    "expected_reason": "missing_header"
+  },
+  {
+    "name": "missing_a",
+    "input": "2 0\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "extra_a",
+    "input": "1 0\n1\n2\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "non_integer_a",
+    "input": "1 0\n1e1\n",
+    "expected_status": "invalid",
+    "expected_reason": "integer_syntax"
+  },
+  {
+    "name": "combined_a_lines",
+    "input": "2 1\n1 10\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "leading_zero_precedes_layout",
+    "input": "1 0 01\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_leading_zero"
+  }
+]

@@ -1,0 +1,336 @@
+{
+  "problem_id": "4376",
+  "phase": "blinded_phase_1",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "source_file": "problems/4376.json",
+  "question_sha256": "1b448a6f78d05ae85c6719394f79d3da45bacfd79075b604d12b9884d337ab7e",
+  "validator_file": "validators/p4376.py",
+  "validator_sha256": "6de8c26d4d940909d69dd104bd695905d590006fa80bb7088c189ff92fc55d48",
+  "constraints": [
+    {
+      "id": "header",
+      "source_quote": "The first line contains two integers n and m (1 <= n, m <= 2 * 10^5)",
+      "rule": "n and m are integers in [1,200000]."
+    },
+    {
+      "id": "rooms",
+      "source_quote": "The second line contains a sequence a_1, a_2, ..., a_n (1 <= a_i <= 10^10)",
+      "rule": "Exactly n room counts, each in [1,10**10]."
+    },
+    {
+      "id": "letters",
+      "source_quote": "The third line contains a sequence b_1, b_2, ..., b_m (1 <= b_j <= a_1 + a_2 + ... + a_n)",
+      "rule": "Exactly m letter indices in [1,sum(a)]."
+    },
+    {
+      "id": "order",
+      "source_quote": "All b_j are given in increasing order.",
+      "rule": "Descending values invalid; duplicates unverified because strictness is not explicitly stated."
+    }
+  ],
+  "assumptions_and_ambiguities": [
+    "ASCII signed decimal integer tokens are evaluated numerically. Leading +, leading zeroes, and signed zero are accepted. Non-ASCII integer notation is unverified rather than rejected as a definite specification violation; ASCII decimal/exponent/underscore/malformed forms are invalid integer tokens.",
+    "Numeric and token/domain constraints are checked before layout. Whitespace within a specified line, optional final newline, and blank leading/trailing lines are accepted.",
+    "After semantic checks, moving tokens across specified lines or adding interior blank lines is unverified:layout_ambiguity, not invalid.",
+    "This is a statement-grounded validator, not a proof that the dataset statement perfectly matches the original judge contract. No submitted solutions or secret inputs were inspected.",
+    "The word increasing could mean strictly increasing or nondecreasing; equal adjacent b values are unverified rather than invalid."
+  ],
+  "status_contract": {
+    "valid": "All checked semantic constraints and stated line grouping satisfied under documented permissive token policy.",
+    "invalid": "A definite token count, numeric, alphabet, ordering, or graph constraint violation under the stated policy.",
+    "unverified": "Unresolved non-ASCII integer notation, input-layout, or increasing-order strictness. No invalidity claim is made from these cases alone."
+  },
+  "normal_inputs_checked": 9,
+  "normal_input_status_counts": {
+    "valid": 9,
+    "invalid": 0,
+    "unverified": 0
+  },
+  "normal_input_mismatches": [],
+  "normal_input_results": [
+    {
+      "index_zero_based": 0,
+      "input_sha256": "c819b71c8ad31a31149864df1722a046fc59743ee6be108422420e05cf114a69",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 1,
+      "input_sha256": "26eff14d69500a95cda496781ab0cb70a8691a902becbde6665287ea720ae4ca",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 2,
+      "input_sha256": "8b88a21ef03528d1b1eb90b24e9a05cb51fc2f935555f94f3999f2f6467ddf0f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 3,
+      "input_sha256": "92eec1df63de7491679969b303af9226474799b0a0f97de9fa86f62e8c8d3176",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "04010ed51211466f238e9b21364986fd6bd63fc852eda5113c9734d8836751f2",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 5,
+      "input_sha256": "cac20dd201b5a3967de5a2ec4ec30d7a8aba88d34e294552b624c249510b55bc",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 6,
+      "input_sha256": "2d1f4abe14e4dfff3a8ce28497f09aebee14c6af51d6ce54a60fa22d4d89b9e8",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 7,
+      "input_sha256": "7e500824b6a2488c6d0733455ce2dce889fd882419827c628e3285695f7eba10",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 8,
+      "input_sha256": "262f7eb74ef407a9b9c8114423d03169adab17fc9d2af6734f3971e9b1e785c5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    }
+  ],
+  "synthetic_case_count": 26,
+  "synthetic_case_results": [
+    {
+      "name": "minimum",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "room_upper_bound",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "sum_exceeds_32bit",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_upper_bound",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "m_upper_bound",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "m_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "m_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "m_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "m_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "room_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "a_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "room_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "a_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "letter_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "b_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "letter_above_sum",
+      "result": {
+        "status": "invalid",
+        "reason": "b_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "descending_letters",
+      "result": {
+        "status": "invalid",
+        "reason": "b_descending"
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate_letters_ambiguous",
+      "result": {
+        "status": "unverified",
+        "reason": "increasing_order_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_room",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_letter",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "integer_lexical_error",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "plus_zeros_spacing",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "one_line_same_tokens",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "interior_blank_line",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "clear_violation_before_layout",
+      "result": {
+        "status": "invalid",
+        "reason": "b_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "fullwidth_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "arabic_indic_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "unicode_minus_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    }
+  ],
+  "compatibility_check": "Parsed with Python 3.12 ast feature_version=(3,4); root will verify execution on real Python 3.4."
+}

@@ -1,0 +1,837 @@
+{
+  "problem_id": "181",
+  "phase": "blinded_phase_1",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "source_file": "problems/181.json",
+  "question_sha256": "5377e2c23955167e3044c88288b692c7a52fda082f415095732bd479496c5d30",
+  "validator_file": "validators/p181.py",
+  "validator_sha256": "dbbc0e09201fc0d3efee9ef37b45c966ab73b8e2d7f88740f75d2cbcdf11dc82",
+  "constraints": [
+    {
+      "id": "token_count",
+      "source_quote": "The only line of the input contains one integer x",
+      "rule": "Exactly one decimal integer token."
+    },
+    {
+      "id": "x_range",
+      "source_quote": "- 10^18 <= x <= 10^18",
+      "rule": "-10**18 <= x <= 10**18."
+    }
+  ],
+  "assumptions_and_ambiguities": [
+    "ASCII signed decimal integer tokens are evaluated numerically. Leading +, leading zeroes, and signed zero are accepted. Non-ASCII integer notation is unverified rather than rejected as a definite specification violation; ASCII decimal/exponent/underscore/malformed forms are invalid integer tokens.",
+    "Numeric and token/domain constraints are checked before layout. Whitespace within a specified line, optional final newline, and blank leading/trailing lines are accepted.",
+    "After semantic checks, moving tokens across specified lines or adding interior blank lines is unverified:layout_ambiguity, not invalid.",
+    "This is a statement-grounded validator, not a proof that the dataset statement perfectly matches the original judge contract. No submitted solutions or secret inputs were inspected."
+  ],
+  "status_contract": {
+    "valid": "All checked semantic constraints and stated line grouping satisfied under documented permissive token policy.",
+    "invalid": "A definite token count, numeric, alphabet, ordering, or graph constraint violation under the stated policy.",
+    "unverified": "Unresolved non-ASCII integer notation, input-layout, or increasing-order strictness. No invalidity claim is made from these cases alone."
+  },
+  "normal_inputs_checked": 79,
+  "normal_input_status_counts": {
+    "valid": 79,
+    "invalid": 0,
+    "unverified": 0
+  },
+  "normal_input_mismatches": [],
+  "normal_input_results": [
+    {
+      "index_zero_based": 0,
+      "input_sha256": "95cf32708a31caa478a0e9141103ac567d85e5186e697e7e0c81f75589999e31",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 1,
+      "input_sha256": "0b1a6987154b8c25af4f5bbd10880091e0f0cb54e5ddcf53776284c7b51d5691",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 2,
+      "input_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 3,
+      "input_sha256": "b1ce0aa6fdf3cf349d773243dab9fbbe09d30619f38b0c1e8977e28c4f0bc495",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "420002158111bff8adb3347d84029e480f45e60e1869b454b6adac3345f9f7d4",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 5,
+      "input_sha256": "a5331f18877e9e1543361e44b4cb0a1f5f0ed5f8297d850bf1fcc68bd7a3ab5f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 6,
+      "input_sha256": "e726b440cc164001999e718b51780d80314709efe06e7857282377be9111127b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 7,
+      "input_sha256": "35696336da00b304d91bb78c4be84c0e975baa9ee85d1b26d4a0168203c19288",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 8,
+      "input_sha256": "748ea33db356501af68a9e37a1583cfa57192a894aab2a692c5475f031d1e81a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 9,
+      "input_sha256": "7d95d2923118bf3cdf3f5d4600b1df557deb75d0ca2ef0f8d3718c3691c86455",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 10,
+      "input_sha256": "e675d6284d97cda6201b109e88e0315a3a6d1993f5bc16b0b241782a5f89a297",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 11,
+      "input_sha256": "21bbc7d059f7f9f228c4e6382772bd603ff65755827c2ecc0c6020554fed694c",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 12,
+      "input_sha256": "b56797986dcb891ef0072c12ebc457b38e63b1e6d61be1547b04b88431df9465",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 13,
+      "input_sha256": "dbe8338192fb354ca88b7a9af39b867e0a0d7764006e537bdde93b6a4527388b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 14,
+      "input_sha256": "79d03872c65b8680b09df96eeb31d4713d439108f1bad6a0bf53369a4bb30c7a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 15,
+      "input_sha256": "2f7b41c34cd42b7beb8865fca85ef9d67d5993725d8a8e94579a45e40eaa911d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 16,
+      "input_sha256": "13bf8b0303fde3792881f560001cd88db2d12c8d9dd78c1413acf6846d686adc",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 17,
+      "input_sha256": "1de9f7ae15d7140aa2141c9ce21518d5e86a93c2c52ed8b9576e4a34896ce09b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 18,
+      "input_sha256": "d5ebc5256f3aa2406c8d114e080650898e06da783031dd7c3dd9f9bb59368e22",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 19,
+      "input_sha256": "f60260e656ad57721144aa337d701695322e53d2973b6ff8b384cd0d331bc382",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 20,
+      "input_sha256": "529f19ecbc377dfea8adff8d5225a7fbf5229eb7f91891cbaa54a506fdaa2020",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 21,
+      "input_sha256": "8beca780898ac48e31903629f5264b7d22c220b2f7f1c1548283cb9c56c8e915",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 22,
+      "input_sha256": "50b8d0f24e4a70befa291916d960440403e7e44d476457dd2271502c75392a3d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 23,
+      "input_sha256": "dbf374c71ad7ace5e98caa87a0fc7b8f98cbed5a83164270a6c32ca8b4bdb037",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 24,
+      "input_sha256": "8e2deaba659fe93b8f8a5370079a8b8c6379e59c002952e75b700b6e710de489",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 25,
+      "input_sha256": "fabcef4db0837681985e8f86bf44435c3a4f953eb346b816e62dd82922503545",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 26,
+      "input_sha256": "8199b805b07841d297eef417e5d769ed9b144651c9bc6f5978fb2a70ff2dd232",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 27,
+      "input_sha256": "f50e85b623789db688284c6c9a1e824d14f08501a1997a5d98b34e730265fc0b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 28,
+      "input_sha256": "f96d96b1c84fe2e2271cca1d35c3f58e49ebb4d7a2107472b090a398547afc6b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 29,
+      "input_sha256": "77d4bf6198ff1077c86d6879d00b2fd8c363b456d9d9af978cec7ac54ed89455",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 30,
+      "input_sha256": "5759ae2b5f4d4a0c8f0607f2f0d79b87cb4a0c200d9b59507e957b210a42c4ac",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 31,
+      "input_sha256": "b416169534b3c8ac0bf3307d7fff08704ea186dab9d54336eb44da35d3ec80bd",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 32,
+      "input_sha256": "d21b7f1662bb30a732e5d1fe11c4b2d8755fb7af018bf96c22febea3771da6af",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 33,
+      "input_sha256": "c70f7276fdfcc8e6205295e5f9590f2a0ed479694a06747a744737e7b36ff877",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 34,
+      "input_sha256": "9c208d96e33163761566fba86b81bde5ce62d19f21884f3e309cf9f1a391ecad",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 35,
+      "input_sha256": "18f746bbd153406c0902a6e5116b593f1f97c90cf6fd22c4ff7c72c7238334ac",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 36,
+      "input_sha256": "3553a88b694863f981222f7bffe458de604f26f92c2ecef547919683ad38a28c",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 37,
+      "input_sha256": "62ddc6f6f2b432c67e20d114a24e3d8509ed4787fecbd89666c92085b086a4a4",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 38,
+      "input_sha256": "e7c40f7bf610e1009970cc83725d0422a59c1e1aa06e85cc534d1533e9c08f36",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 39,
+      "input_sha256": "8141972d5b6d7804b8f10f42dfe12712d544a206fd0d9b15d62a77d2b8a72a90",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 40,
+      "input_sha256": "dc9170bed10158634796fce72f3c4d4a51c77ce81de27027ac7d0a2577bfb93a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 41,
+      "input_sha256": "19056ef11d62c44c43ed8f95dc6101a16b46d3c9782d63c5c03e494f6cc637d8",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 42,
+      "input_sha256": "5be300ec49928c621b14fa6df9e25fcb4c468a873be93a8c6cb6be5a6d9f4ce2",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 43,
+      "input_sha256": "02a239b249ede5bd93804b1f1b853d112c27385a3f8019d7dd46adb6cc261e3f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 44,
+      "input_sha256": "34eb681b880672f511e8cc71cdcf67ad3316764c783571d4071fd22e84fb00c2",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 45,
+      "input_sha256": "529e9b65b70ba24c127a37f24bbb93a9310569bca2fe64cd75158e52c953a4b9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 46,
+      "input_sha256": "fb593c25982c4a44dd8e17c5ae6ec25defff31b497e6e39a2f60011cbb3dd6b2",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 47,
+      "input_sha256": "060dc2d4dc2707a43de575e8f1d85e529b4f66bc8365c6173a30cbb4d3304798",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 48,
+      "input_sha256": "a2a05b18f956332c437eea4c9691d2180de66440624772cca81cc6ab15d81b03",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 49,
+      "input_sha256": "7a49f478aba01f56035a2a2b06ff595d72d6d8edf3c87b292c3d0a98647596c0",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 50,
+      "input_sha256": "15124ce9b88207059958563735d09bd8fab5b25b770acb30d749c4ac29661a8d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 51,
+      "input_sha256": "0fdf5ea49fdb23de5a51513cee170e80d0d82ab23b0377aa2c0c9babd12e8d3f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 52,
+      "input_sha256": "753b0908c726ea8ec1b8731783987f82cb1c9af0a3c73d5fdd62fcb5c04a483c",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 53,
+      "input_sha256": "7bace69dfb3e66b94fb083407edcbc1bef1d8973b4ffcc59d4ba356c928e36e3",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 54,
+      "input_sha256": "5edba96b4a948012eccc08b89d708604a50b3f9390de226b0f0563531b39835f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 55,
+      "input_sha256": "bbfd1ac5a1eecb885b7eaea73e84c9c5e7c626db2abacd8ff93bbb5353aa0eec",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 56,
+      "input_sha256": "d6e48a7cc987db34cdba5d38deae238df19d16cb470737813a2b3753db181b44",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 57,
+      "input_sha256": "e607d6c0cd33dd02d0eaec1fe5b40ec39f9bb714e2a7745a237e6288d29090a0",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 58,
+      "input_sha256": "088d9bd55a3d80f4abc53c7c9984b7f16bfbce84f231028df7f892bf48801163",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 59,
+      "input_sha256": "3738644b365b59884839a5c8666545eb08539e2ff6318ab5f48ff87b29e384c1",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 60,
+      "input_sha256": "f38dd17bd5cb464aa4cd0d7e3a1eef1cb91a519656ab95cc4664f3e94265d799",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 61,
+      "input_sha256": "16fe44c8f6a99479f33c84ac512ca59ef679806bd76dad8d7cf632277d0014de",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 62,
+      "input_sha256": "7f8f000b19baf1a024a2308ad7cbb53037c2238834b4dc55e0621ca04e80d370",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 63,
+      "input_sha256": "b1f035cd3f68007c4890d7f8454fb308e635c35d5d3e818ec9b59050a4be2073",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 64,
+      "input_sha256": "67bf704a45cfa808dc3df320cfad728ee23ac52c832dd96b80314324e38d2d9e",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 65,
+      "input_sha256": "18325515d9742e1899394ae026da031e38d5aac9ddf764b355d06641cf84170d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 66,
+      "input_sha256": "39750421e5798ffa7e926f8aea759ded728dfc4b24706a35dd5e767e70defe0e",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 67,
+      "input_sha256": "41590e5657825a493c0982fb880520e63fd7d2bde777e9ff2ba5a0b06725c2fd",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 68,
+      "input_sha256": "f1c095c084e96235bc284b260d29133d3e74c6e153f7bc68237ea0d0dafdf4e6",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 69,
+      "input_sha256": "dd71f26219fb4e44b3f2570e71b1194ab7d33108794204a81f7d233f563ca7a0",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 70,
+      "input_sha256": "c46966fe762f81caf0bc4123a7da6eaad6e1b8ecd37d8f93a95c2282ec9fa24d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 71,
+      "input_sha256": "0b3fe7b39a8def8355f5046ec7e058d272cb6f9b3ddf36cc0b448122c585b24f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 72,
+      "input_sha256": "fa9b8a16a09e50388c916a5d5408bd45007374dba4417aa6d7b1244047ebff36",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 73,
+      "input_sha256": "04cd7fb7af0aaceedd3f855227147179afd05080decf0170a54377db2d600996",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 74,
+      "input_sha256": "3455ae225ef308570ca0d6e1af3b182640cb1a6258385dd918d9380b5957dd92",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 75,
+      "input_sha256": "03fb1c1549622ceec817e31ff49a2634a97a3ae3b9a4401ec605dfcb173dd574",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 76,
+      "input_sha256": "58ab24e021c2cb7630e8de41e01e126a3f6102609325a5dffd6a7161a086bc81",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 77,
+      "input_sha256": "6b3dbe9404c32d56cbaff88ada0a1c1f8cbd55f3f1ce6e6ef1afe746389a9ef9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 78,
+      "input_sha256": "1f0a358472af12725f97c4f6f6f06199c3be10cb8968c36080d25a5d9084b0b9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    }
+  ],
+  "synthetic_case_count": 20,
+  "synthetic_case_results": [
+    {
+      "name": "zero",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "lower_bound",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "upper_bound",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "below_lower_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "x_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "above_upper_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "x_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "leading_zero_and_plus",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "negative_zero",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "spaces_crlf_blank_edges",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "no_final_newline",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "long_zero_prefix",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "very_large_integer",
+      "result": {
+        "status": "invalid",
+        "reason": "x_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_integer",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_integer",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_line",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "decimal_not_integer",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "scientific_not_integer_token",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "double_sign",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "fullwidth_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "arabic_indic_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "unicode_minus_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    }
+  ],
+  "compatibility_check": "Parsed with Python 3.12 ast feature_version=(3,4); root will verify execution on real Python 3.4."
+}

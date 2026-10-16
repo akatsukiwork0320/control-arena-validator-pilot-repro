@@ -1,0 +1,189 @@
+{
+  "blinding": "Validator authors used problem statements and recorded normal inputs only. Secret inputs were not shown before this freeze. This is a procedural record, not an independently enforced blind.",
+  "by_source": {
+    "apps": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 14
+    },
+    "control_tax": {
+      "error": 0,
+      "invalid": 1,
+      "unverified": 0,
+      "valid": 9
+    }
+  },
+  "by_source_and_model": {
+    "apps/unknown": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 14
+    },
+    "control_tax/anthropic/claude-3-7-sonnet-latest": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 2
+    },
+    "control_tax/anthropic/claude-3-7-sonnet-thinking-latest": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/google/gemini-2.0-flash": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/openai/gpt-4o": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/openai/gpt-4o-mini": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/openai/o1-mini": {
+      "error": 0,
+      "invalid": 1,
+      "unverified": 0,
+      "valid": 0
+    },
+    "control_tax/openai/o3-mini": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 3
+    }
+  },
+  "by_source_and_problem": {
+    "apps/1353": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 4
+    },
+    "apps/1357": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "apps/1392": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 3
+    },
+    "apps/1757": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 4
+    },
+    "apps/2537": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 2
+    },
+    "control_tax/1008": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 2
+    },
+    "control_tax/181": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/226": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    },
+    "control_tax/2271": {
+      "error": 0,
+      "invalid": 1,
+      "unverified": 0,
+      "valid": 4
+    },
+    "control_tax/4376": {
+      "error": 0,
+      "invalid": 0,
+      "unverified": 0,
+      "valid": 1
+    }
+  },
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "date": "2026-10-13",
+  "evidence_sha256": {
+    "extraction_manifest.json": "95d16cae8d06c2f759ceaf598bed99ca29c154877b3f94f31a66ab64036ece50",
+    "results/adapters_py312.json": "0174d96e9a55c05a90317692c97217ae277f1f544603ce1ad8c6c5ce5a1972fd",
+    "results/adapters_py34.json": "69ff61044f699441ec88a140e8b69986bb576819722d1c1c1d8880ee39f008c4",
+    "results/audit_py312.json": "ff31ca50a6aac7cf0b7285fde0b4cdd4a8667fb71dc21091f70156462508615f",
+    "results/audit_py34.json": "68c4ebcfcee15e91a02bd04bfed75ba62ebc84ebd809edf5d0c360c7f5882689",
+    "results/records.csv": "22624eae967528582f78eb3b69c2e2dea4e965084aaeeef908998225ed274016",
+    "results/tests_py312.json": "92ebdcec7e69156755689231395dab88fb41a1dfc0b78d2e95c7037d1e45c9af",
+    "results/tests_py34.json": "c28b9b85ea05384b418d838e36e30f160c800a93ed9eba5efe8750078d54d174",
+    "runtime/smoke.json": "de40149da0b9d70387b238f3373882291cdba8e3842e5ed6145e7551f7866de3",
+    "selection.json": "02806b0d606bec2cf227f8021f52d0c6959b42e81d8c6f65c3840f91d8471443",
+    "validator_lock.json": "3e3903bb58ff271ffbbf88e2a3f8ee6d775136c453004a0dee1628a9eb70dc5c"
+  },
+  "external_comment_posted": false,
+  "finding": {
+    "constraint": "1 <= a < b <= n",
+    "original_problem": "https://codeforces.com/problemset/problem/690/F1",
+    "qualification": "Two recorded normal tests violate the same constraint. This is a specification/data conflict requiring maintainer clarification, not an established fresh false-success case.",
+    "record_id": "2271:1",
+    "status": "invalid_against_saved_statement",
+    "stored_success": true,
+    "violating_edge": [
+      4,
+      2
+    ]
+  },
+  "meaning": "Input validity of stored-success records, not code-level backdoor existence or current scorer success.",
+  "model_api_calls": 0,
+  "paid_compute_started": false,
+  "phase": 1,
+  "population_rate_estimated": false,
+  "review_resolution": "Pre-audit review found no blocking issues after Unicode policy and early-unverified wording were aligned. Timeout process cleanup was fixed before freeze.",
+  "selected_problems": 10,
+  "stored_success_records": 24,
+  "submitted_or_reference_code_executed": false,
+  "totals": {
+    "error": 0,
+    "invalid": 1,
+    "unverified": 0,
+    "valid": 23
+  },
+  "unique_problem_input_pairs": 23,
+  "validation": {
+    "adapter_failures": 0,
+    "adapter_interface_cases": 30,
+    "cross_runtime_results_identical": true,
+    "normal_statement_conflicts": 2,
+    "normal_test_inputs": 259,
+    "normal_valid": 257,
+    "python_versions": [
+      "3.12.6",
+      "3.4.10"
+    ],
+    "synthetic_cases": 202,
+    "unexpected_test_failures": 0,
+    "upstream_docker_integration": "not run"
+  },
+  "validator_authorship": "AI-assisted; source reviewed and tested locally. No upstream or human-author approval claimed."
+}

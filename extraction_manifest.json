@@ -1,0 +1,92 @@
+{
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "selection_sha256": "02806b0d606bec2cf227f8021f52d0c6959b42e81d8c6f65c3840f91d8471443",
+  "problems": [
+    {
+      "problem_id": "181",
+      "public_file_sha256": "4933fae9ee7287c81832df6ddb4e8fbafe6253167c34597e1ea3d4504820624f",
+      "normal_test_count": 79,
+      "stored_success_records_by_source": {
+        "control_tax": 1
+      }
+    },
+    {
+      "problem_id": "226",
+      "public_file_sha256": "0a8218189acb959d1d21a02020fe95c29ed30c2b86d6322becca03ba2957df2a",
+      "normal_test_count": 70,
+      "stored_success_records_by_source": {
+        "control_tax": 1
+      }
+    },
+    {
+      "problem_id": "1008",
+      "public_file_sha256": "14aa4dffbc2b0edb3665c0cd01d1ed8e89698b903668f00f6dad0b126ad08ea0",
+      "normal_test_count": 26,
+      "stored_success_records_by_source": {
+        "control_tax": 2
+      }
+    },
+    {
+      "problem_id": "1353",
+      "public_file_sha256": "09a1bb414e7d490ca2e7e0eda500bf099269b94a3624030ff09f915fb2d64d30",
+      "normal_test_count": 19,
+      "stored_success_records_by_source": {
+        "apps": 4
+      }
+    },
+    {
+      "problem_id": "1357",
+      "public_file_sha256": "5896f5f9448ee0a07b12352cd70c285546b56c5eb6421480c60644671df428ab",
+      "normal_test_count": 19,
+      "stored_success_records_by_source": {
+        "apps": 1
+      }
+    },
+    {
+      "problem_id": "1392",
+      "public_file_sha256": "2917140e989b5d878d61bfa4434282cd1a95227ef6db70754339d90ba7358024",
+      "normal_test_count": 18,
+      "stored_success_records_by_source": {
+        "apps": 3
+      }
+    },
+    {
+      "problem_id": "1757",
+      "public_file_sha256": "bd7fbdbb384b7574ebf2088f55b396373edfa5e45605872ec3985e29fc5346e9",
+      "normal_test_count": 12,
+      "stored_success_records_by_source": {
+        "apps": 4
+      }
+    },
+    {
+      "problem_id": "2271",
+      "public_file_sha256": "dd982c8089936c626e8e4b20ba02fc2d579588613b04bf3f3837fcad2e2a6ac4",
+      "normal_test_count": 5,
+      "stored_success_records_by_source": {
+        "control_tax": 5
+      }
+    },
+    {
+      "problem_id": "2537",
+      "public_file_sha256": "91a9ece64a49a33fb57b192a6ccd651e6969f2a341e2492bdef3b19ddfce6819",
+      "normal_test_count": 2,
+      "stored_success_records_by_source": {
+        "apps": 2
+      }
+    },
+    {
+      "problem_id": "4376",
+      "public_file_sha256": "3c8c103e32b0c30eb407523657f70f6004d1cb7567baf4aac8309e594dd1214f",
+      "normal_test_count": 9,
+      "stored_success_records_by_source": {
+        "control_tax": 1
+      }
+    }
+  ],
+  "excluded_columns": [
+    "backdoor_code",
+    "solutions"
+  ],
+  "attack_records_sha256": "7a9eb05d52407446ee957c4cb04d9a4a3fe42a8cc5e86a375661b1c2184164a3",
+  "record_count": 24
+}

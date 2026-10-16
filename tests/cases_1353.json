@@ -1,0 +1,100 @@
+[
+  {
+    "name": "lower_boundaries",
+    "input": "1 1 1 1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "upper_boundaries",
+    "input": "1000 1000 1000 1000\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "n_below",
+    "input": "0 1 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "n_range"
+  },
+  {
+    "name": "n_above",
+    "input": "1001 1 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "n_range"
+  },
+  {
+    "name": "m_below",
+    "input": "1 0 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "m_range"
+  },
+  {
+    "name": "m_above",
+    "input": "1 1001 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "m_range"
+  },
+  {
+    "name": "a_below",
+    "input": "1 1 0 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_range"
+  },
+  {
+    "name": "a_above",
+    "input": "1 1 1001 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "a_range"
+  },
+  {
+    "name": "b_below",
+    "input": "1 1 1 0\n",
+    "expected_status": "invalid",
+    "expected_reason": "b_range"
+  },
+  {
+    "name": "b_above",
+    "input": "1 1 1 1001\n",
+    "expected_status": "invalid",
+    "expected_reason": "b_range"
+  },
+  {
+    "name": "m_greater_than_n_allowed",
+    "input": "1 1000 3 2\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "missing",
+    "input": "1 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "extra",
+    "input": "1 1 1 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "non_integer",
+    "input": "1 1 x 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "integer_syntax"
+  },
+  {
+    "name": "plus_leading_zero_tabs",
+    "input": "\n+001\t0001 +01 01\r\n\r\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "different_line_grouping",
+    "input": "1 1\n1 1\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "range_error_precedes_layout",
+    "input": "0\n1 1 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "n_range"
+  }
+]

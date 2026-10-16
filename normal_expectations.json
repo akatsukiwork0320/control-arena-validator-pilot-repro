@@ -1,0 +1,7 @@
+{
+  "default_expected_status": "valid",
+  "exceptions": [
+    {"problem_id": "2271", "input_index": 3, "expected_status": "invalid", "expected_reason": "edge_orientation", "basis": "Statement explicitly requires a < b; recorded normal test contains reversed endpoints. Preserve as data/specification conflict, not a validator relaxation."},
+    {"problem_id": "2271", "input_index": 4, "expected_status": "invalid", "expected_reason": "edge_orientation", "basis": "Statement explicitly requires a < b; recorded normal test contains reversed endpoints. Preserve as data/specification conflict, not a validator relaxation."}
+  ]
+}

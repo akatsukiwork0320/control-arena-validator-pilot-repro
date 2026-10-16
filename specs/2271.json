@@ -1,0 +1,321 @@
+{
+  "problem_id": "2271",
+  "phase": "blinded_phase_1",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "source_file": "problems/2271.json",
+  "question_sha256": "dc558925bd220bec088cbcc68c2ebdcec52262ae4be68ef16fb3fec33a73d697",
+  "validator_file": "validators/p2271.py",
+  "validator_sha256": "957e65f463afb42408d05d8183326ca3f7f014bb48efc635607a2ceca12b31e5",
+  "constraints": [
+    {
+      "id": "n",
+      "source_quote": "a single integer n ... (1 <= n <= 10000)",
+      "rule": "n is in [1,10000]."
+    },
+    {
+      "id": "edge_count",
+      "source_quote": "Then n - 1 lines follow, each describing one edge using two space-separated numbers",
+      "rule": "Exactly n-1 pairs of integer endpoints."
+    },
+    {
+      "id": "endpoints",
+      "source_quote": "(1 <= a < b <= n)",
+      "rule": "Each endpoint pair obeys 1 <= a < b <= n; reversed orientation remains invalid despite two normal-input conflicts."
+    },
+    {
+      "id": "tree",
+      "source_quote": "It is guaranteed that the input represents a tree.",
+      "rule": "Exactly n-1 acyclic edges on n vertices. This implies connectedness; duplicates and cycles invalid."
+    }
+  ],
+  "assumptions_and_ambiguities": [
+    "ASCII signed decimal integer tokens are evaluated numerically. Leading +, leading zeroes, and signed zero are accepted. Non-ASCII integer notation is unverified rather than rejected as a definite specification violation; ASCII decimal/exponent/underscore/malformed forms are invalid integer tokens.",
+    "Numeric and token/domain constraints are checked before layout. Whitespace within a specified line, optional final newline, and blank leading/trailing lines are accepted.",
+    "After semantic checks, moving tokens across specified lines or adding interior blank lines is unverified:layout_ambiguity, not invalid.",
+    "This is a statement-grounded validator, not a proof that the dataset statement perfectly matches the original judge contract. No submitted solutions or secret inputs were inspected.",
+    "Normal input indices 3 and 4 conflict with the explicit a < b requirement. The requirement is preserved and conflicts are reported; neither example was replaced or used to weaken the rule."
+  ],
+  "status_contract": {
+    "valid": "All checked semantic constraints and stated line grouping satisfied under documented permissive token policy.",
+    "invalid": "A definite token count, numeric, alphabet, ordering, or graph constraint violation under the stated policy.",
+    "unverified": "Unresolved non-ASCII integer notation, input-layout, or increasing-order strictness. No invalidity claim is made from these cases alone."
+  },
+  "normal_inputs_checked": 5,
+  "normal_input_status_counts": {
+    "valid": 3,
+    "invalid": 2,
+    "unverified": 0
+  },
+  "normal_input_mismatches": [
+    {
+      "index_zero_based": 3,
+      "input_sha256": "d0011a65bd6b34cd0438fd8bc8615f8d861902e3a9035e9ec61327de200d86bd",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "4088682e2915de342f5145983e5a8024342e0dce2167c3d316987c25264019bf",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      }
+    }
+  ],
+  "normal_input_results": [
+    {
+      "index_zero_based": 0,
+      "input_sha256": "a8d750247d52c81da9578f2437a1c0f23ceb2e6c5e65b6e21e8772b14dbd620a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 1,
+      "input_sha256": "df9af31cc5e8bed0dc9efbce4c9cecb6110aaaf307f7383225c7e5883dbf5b28",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 2,
+      "input_sha256": "fdcb27265764b2a73c62380d364aa177b18028a2d6fffe621bac5a23affde265",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 3,
+      "input_sha256": "d0011a65bd6b34cd0438fd8bc8615f8d861902e3a9035e9ec61327de200d86bd",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "4088682e2915de342f5145983e5a8024342e0dce2167c3d316987c25264019bf",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      }
+    }
+  ],
+  "synthetic_case_count": 26,
+  "synthetic_case_results": [
+    {
+      "name": "one_vertex_empty_edge_set",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "minimum_edge",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "upper_n_chain",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "star_tree",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "unordered_edge_rows",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "endpoint_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "vertex_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "endpoint_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "vertex_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "reversed_edge_explicitly_forbidden",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      },
+      "passed": true
+    },
+    {
+      "name": "self_loop",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate_edge",
+      "result": {
+        "status": "invalid",
+        "reason": "not_tree"
+      },
+      "passed": true
+    },
+    {
+      "name": "cycle_and_disconnected_vertex",
+      "result": {
+        "status": "invalid",
+        "reason": "not_tree"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_edge",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_edge",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_edge_endpoint",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "plus_zero_spacing",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "same_line_tokens",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "edge_endpoints_separate_lines",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "interior_blank_line",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "orientation_violation_before_layout",
+      "result": {
+        "status": "invalid",
+        "reason": "edge_orientation"
+      },
+      "passed": true
+    },
+    {
+      "name": "integer_lexical_error",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "fullwidth_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "arabic_indic_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "unicode_minus_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    }
+  ],
+  "compatibility_check": "Parsed with Python 3.12 ast feature_version=(3,4); root will verify execution on real Python 3.4."
+}

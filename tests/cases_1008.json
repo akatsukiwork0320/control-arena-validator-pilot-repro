@@ -1,0 +1,128 @@
+[
+  {
+    "name": "minimum",
+    "input": "a\n1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "both_upper_bounds",
+    "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n1000\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "k_can_exceed_string_length",
+    "input": "a\n1000\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "nondivisible_length_still_valid",
+    "input": "abcde\n2\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "nonpalindrome_still_valid",
+    "input": "abca\n1\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "string_above_length",
+    "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_length"
+  },
+  {
+    "name": "uppercase_not_lowercase_english",
+    "input": "Abc\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_alphabet"
+  },
+  {
+    "name": "non_english_letter",
+    "input": "café\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_alphabet"
+  },
+  {
+    "name": "digit_in_string",
+    "input": "abc1\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_alphabet"
+  },
+  {
+    "name": "k_below_bound",
+    "input": "abc\n0\n",
+    "expected_status": "invalid",
+    "expected_reason": "k_range"
+  },
+  {
+    "name": "k_above_bound",
+    "input": "abc\n1001\n",
+    "expected_status": "invalid",
+    "expected_reason": "k_range"
+  },
+  {
+    "name": "missing_string",
+    "input": "\n1\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "missing_k",
+    "input": "abc\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "extra_token",
+    "input": "abc\n1 extra\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "decimal_k",
+    "input": "abc\n1.0\n",
+    "expected_status": "invalid",
+    "expected_reason": "integer_token"
+  },
+  {
+    "name": "plus_zeros_blank_edges",
+    "input": "\n abc \r\n\t+0001  \r\n\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "same_line_tokens",
+    "input": "abc 1\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "interior_blank_line",
+    "input": "abc\n\n1\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "alphabet_violation_before_layout",
+    "input": "ABC 1\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_alphabet"
+  },
+  {
+    "name": "fullwidth_integer_unverified",
+    "input": "a\n１\n",
+    "expected_status": "unverified",
+    "expected_reason": "non_ascii_integer_notation"
+  },
+  {
+    "name": "arabic_indic_integer_unverified",
+    "input": "a\n١\n",
+    "expected_status": "unverified",
+    "expected_reason": "non_ascii_integer_notation"
+  },
+  {
+    "name": "unicode_minus_unverified",
+    "input": "a\n−1\n",
+    "expected_status": "unverified",
+    "expected_reason": "non_ascii_integer_notation"
+  }
+]

@@ -1,0 +1,5106 @@
+{
+  "cases": [
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "zero",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_bound",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "upper_bound",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "below_lower_bound",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "x_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "above_upper_bound",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "x_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "leading_zero_and_plus",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "negative_zero",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "spaces_crlf_blank_edges",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "no_final_newline",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "long_zero_prefix",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "very_large_integer",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "x_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_integer",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_integer",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_line",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "decimal_not_integer",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "scientific_not_integer_token",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "double_sign",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "fullwidth_integer_unverified",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "arabic_indic_integer_unverified",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "unicode_minus_unverified",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 18,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 19,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 20,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 21,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 22,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 23,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 24,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 25,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 26,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 27,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 28,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 29,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 30,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 31,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 32,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 33,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 34,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 35,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 36,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 37,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 38,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 39,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 40,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 41,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 42,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 43,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 44,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 45,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 46,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 47,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 48,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 49,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 50,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 51,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 52,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 53,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 54,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 55,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 56,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 57,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 58,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 59,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 60,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 61,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 62,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 63,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 64,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 65,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 66,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 67,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 68,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 69,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 70,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 71,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 72,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 73,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 74,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 75,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 76,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 77,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 78,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "181",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "minimum",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "maximum_count_and_sizes",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below_bound",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above_bound",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "size_below_bound",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "slice_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "size_above_bound",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "slice_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_size",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_size",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "integer_lexical_error",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_zeros_spacing",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "same_line_tokens",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "split_sizes_across_lines",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "interior_blank_line",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "domain_violation_before_layout",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "slice_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "empty",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "fullwidth_integer_unverified",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "arabic_indic_integer_unverified",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "unicode_minus_unverified",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 18,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 19,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 20,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 21,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 22,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 23,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 24,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 25,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 26,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 27,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 28,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 29,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 30,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 31,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 32,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 33,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 34,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 35,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 36,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 37,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 38,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 39,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 40,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 41,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 42,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 43,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 44,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 45,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 46,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 47,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 48,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 49,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 50,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 51,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 52,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 53,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 54,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 55,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 56,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 57,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 58,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 59,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 60,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 61,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 62,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 63,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 64,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 65,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 66,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 67,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 68,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 69,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "226",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "minimum",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "both_upper_bounds",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "k_can_exceed_string_length",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "nondivisible_length_still_valid",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "nonpalindrome_still_valid",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "string_above_length",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "s_length",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "uppercase_not_lowercase_english",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "s_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "non_english_letter",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "s_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "digit_in_string",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "s_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "k_below_bound",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "k_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "k_above_bound",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "k_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_string",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_k",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_token",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "decimal_k",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_zeros_blank_edges",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "same_line_tokens",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "interior_blank_line",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "alphabet_violation_before_layout",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "s_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "fullwidth_integer_unverified",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "arabic_indic_integer_unverified",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "unicode_minus_unverified",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 18,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 19,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 20,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 21,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 22,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 23,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 24,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 25,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1008",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_boundaries",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "upper_boundaries",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_below",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_above",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_below",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_above",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "b_below",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "b_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "b_above",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "b_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "m_greater_than_n_allowed",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "non_integer",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "integer_syntax",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_leading_zero_tabs",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "different_line_grouping",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "range_error_precedes_layout",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 18,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1353",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_boundaries",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "n_and_house_upper",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "m_upper_boundary",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_below",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_above",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "house_below",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "house_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "house_above",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "house_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "repeated_houses_allowed",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_header",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "missing_header",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_house",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_house",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "non_integer_house",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "integer_syntax",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_leading_zeros_whitespace",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "single_line_layout",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "split_house_lines",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "range_error_precedes_layout",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "house_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 18,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1357",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_boundaries",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "k_and_a_upper",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "n_upper",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "k_below",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "k_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "k_above",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "k_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_below",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_above",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_leading_zero",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "a_leading_zero",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "a_signed_leading_zero",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "a_leading_zero",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "header_leading_zeros_allowed",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_on_a_allowed",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_header",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "missing_header",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_a",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_a",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "non_integer_a",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "integer_syntax",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "combined_a_lines",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "leading_zero_precedes_layout",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "a_leading_zero",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 12,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 13,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 14,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 15,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 16,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 17,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1392",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_boundary",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "upper_boundary",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "below_lower",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "above_upper",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "negative",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_leading_zeros_whitespace",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "decimal_fraction",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "integer_syntax",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "huge_integer",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "non_ascii_integer",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 9,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 10,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 11,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "1757",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "one_vertex_empty_edge_set",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "minimum_edge",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "upper_n_chain",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "star_tree",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "unordered_edge_rows",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below_bound",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above_bound",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "endpoint_below_bound",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "vertex_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "endpoint_above_bound",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "vertex_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "reversed_edge_explicitly_forbidden",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "self_loop",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "duplicate_edge",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "not_tree",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "cycle_and_disconnected_vertex",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "not_tree",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_edge",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_edge",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_edge_endpoint",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_zero_spacing",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "same_line_tokens",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "edge_endpoints_separate_lines",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "interior_blank_line",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "orientation_violation_before_layout",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "integer_lexical_error",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "empty",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "fullwidth_integer_unverified",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "arabic_indic_integer_unverified",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "unicode_minus_unverified",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "lower_boundaries",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "length_upper",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "q_upper",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "q_below",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "q_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "q_above",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "q_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "s_above_length",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "s_length",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "s_uppercase",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "s_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "s_empty",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "t_above_length",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "t_length",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "t_uppercase",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "t_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "t_empty",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "p_above_length",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "p_length",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "p_uppercase",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "p_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "p_empty",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "digits_not_letters",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "t_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "unicode_not_latin",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "p_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "missing_header",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_string",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_string",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "non_integer_q",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "integer_syntax",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_leading_zero_blank_edges",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "same_line_strings",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "all_one_line",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "internal_blank_line",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "domain_error_precedes_layout",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "t_alphabet",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2537",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "minimum",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "room_upper_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "sum_exceeds_32bit",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "n_upper_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "m_upper_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_below_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "n_above_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "n_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_below_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "m_above_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "m_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "room_below_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "room_above_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "a_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "letter_below_bound",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "b_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "letter_above_sum",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "b_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "descending_letters",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "b_descending",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "duplicate_letters_ambiguous",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "increasing_order_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "missing_room",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "extra_letter",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "integer_lexical_error",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "integer_token",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "kind": "fixture",
+      "name": "plus_zeros_spacing",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "one_line_same_tokens",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "interior_blank_line",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "layout_ambiguity",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "clear_violation_before_layout",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "b_range",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "kind": "fixture",
+      "name": "empty",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "token_count",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "fullwidth_integer_unverified",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "arabic_indic_integer_unverified",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "unverified",
+      "kind": "fixture",
+      "name": "unicode_minus_unverified",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "non_ascii_integer_notation",
+        "status": "unverified"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 0,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 1,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 2,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 5,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 6,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 7,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    },
+    {
+      "expected_status": "valid",
+      "input_index": 8,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "4376",
+      "result": {
+        "reason": "constraints_satisfied",
+        "status": "valid"
+      }
+    }
+  ],
+  "counts": {
+    "failed_assertions": 0,
+    "fixtures": 202,
+    "recorded_normal_inputs": 259
+  },
+  "normal_input_nonvalid": [
+    {
+      "expected_status": "invalid",
+      "input_index": 3,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    },
+    {
+      "expected_status": "invalid",
+      "input_index": 4,
+      "kind": "recorded_normal_input",
+      "passed": true,
+      "problem_id": "2271",
+      "result": {
+        "reason": "edge_orientation",
+        "status": "invalid"
+      }
+    }
+  ],
+  "python": "3.12.6",
+  "runner_error_classification_self_tests": "passed"
+}

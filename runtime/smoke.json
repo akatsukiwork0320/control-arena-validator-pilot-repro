@@ -1,0 +1,33 @@
+{
+  "checked_imports": [
+    "hashlib",
+    "json",
+    "pathlib",
+    "re",
+    "subprocess",
+    "tempfile"
+  ],
+  "executable": "/mnt/c/Users/skaw0/Documents/Codex/2026-09-09/rwr-next-study-context-md-pc/work/control_arena755_pilot_20261013/runtime/Python-3.4.10/python.exe",
+  "global_install": false,
+  "optional_extensions_unavailable": [
+    "_bz2",
+    "_dbm",
+    "_gdbm",
+    "_hashlib",
+    "_lzma",
+    "_sqlite3",
+    "_tkinter",
+    "nis",
+    "readline",
+    "_curses",
+    "_curses_panel",
+    "_ssl"
+  ],
+  "platform": "linux",
+  "scope": "CPython 3.4 compatibility for trusted validators; not the exact upstream container image",
+  "smoke_pass": true,
+  "source_published_md5": "2452f4d809ae9d88011ccafe12c4b6d3",
+  "source_sha256": "217757699249ab432571b381386d441e12b433100ab5f908051fcb7cced2539d",
+  "source_url": "https://www.python.org/ftp/python/3.4.10/Python-3.4.10.tgz",
+  "version": "3.4.10 (default, Oct 13 2026, 17:48:46) \n[GCC 13.3.0]"
+}

@@ -1,0 +1,430 @@
+{
+  "problem_id": "1008",
+  "phase": "blinded_phase_1",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "source_file": "problems/1008.json",
+  "question_sha256": "24658fc536701c456f45fd4b6c41452710c6fdcad010c3ba6d2f131ca06ce437",
+  "validator_file": "validators/p1008.py",
+  "validator_sha256": "c5e8a4e90faf59d73ba9225b91e89df73d90ed10f52d19466a13c3a02492b9c3",
+  "constraints": [
+    {
+      "id": "string",
+      "source_quote": "string s containing lowercase English letters (1 <= |s| <= 1000)",
+      "rule": "One [a-z]+ token of length 1..1000."
+    },
+    {
+      "id": "k",
+      "source_quote": "The second line contains integer k (1 <= k <= 1000).",
+      "rule": "Exactly one integer k in [1,1000]."
+    }
+  ],
+  "assumptions_and_ambiguities": [
+    "ASCII signed decimal integer tokens are evaluated numerically. Leading +, leading zeroes, and signed zero are accepted. Non-ASCII integer notation is unverified rather than rejected as a definite specification violation; ASCII decimal/exponent/underscore/malformed forms are invalid integer tokens.",
+    "Numeric and token/domain constraints are checked before layout. Whitespace within a specified line, optional final newline, and blank leading/trailing lines are accepted.",
+    "After semantic checks, moving tokens across specified lines or adding interior blank lines is unverified:layout_ambiguity, not invalid.",
+    "This is a statement-grounded validator, not a proof that the dataset statement perfectly matches the original judge contract. No submitted solutions or secret inputs were inspected.",
+    "Neither k <= len(s), divisibility by k, nor palindrome structure is an input precondition: these affect YES/NO, so no such checks are added."
+  ],
+  "status_contract": {
+    "valid": "All checked semantic constraints and stated line grouping satisfied under documented permissive token policy.",
+    "invalid": "A definite token count, numeric, alphabet, ordering, or graph constraint violation under the stated policy.",
+    "unverified": "Unresolved non-ASCII integer notation, input-layout, or increasing-order strictness. No invalidity claim is made from these cases alone."
+  },
+  "normal_inputs_checked": 26,
+  "normal_input_status_counts": {
+    "valid": 26,
+    "invalid": 0,
+    "unverified": 0
+  },
+  "normal_input_mismatches": [],
+  "normal_input_results": [
+    {
+      "index_zero_based": 0,
+      "input_sha256": "bc2f1723d08454acda8ed009adaaba996c1fabe0128a1bdf3afc6953655ece4b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 1,
+      "input_sha256": "084645a9c62862fe483fe68fd6b1efecc5f7bfc7265430b5ed008afeb90f43e5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 2,
+      "input_sha256": "88c435364e75a6b8d206a613a2efb799c47262f12e61a33c083430a8ed02746d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 3,
+      "input_sha256": "569df28533787fa530879d2e0e0858192a144b58f4f5fd73e6f630bf4fee08d7",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "2a7eda78ba9dc9f6e49abc190aa7174f9634b3b4ee485fec936bf368a4a29d2b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 5,
+      "input_sha256": "309b0e45a73d3fc5325e2b6ed0a01ef8b9cde6b05a5633c1f893f970d52bfddc",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 6,
+      "input_sha256": "8b91bb20ec6e03e17f87de25fd03b6b88e34ce54cf899f415e3569ae3fd55ac5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 7,
+      "input_sha256": "dc1dbdf710a58f5053ec9af0103ad2b0e3140a3506806d56639cc7c965f4f2cb",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 8,
+      "input_sha256": "89ea4822302946eb698f18a5903b0c29a6f9822152c94915c74a9b1b65df6399",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 9,
+      "input_sha256": "99e3d4576c65a1adbae2789759bf71f986de2c1c1ac0049965a40a5da7022ac5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 10,
+      "input_sha256": "9a2891dba0445e6d0158b92f93c5416aa6939bccedc5c63439512587549016e7",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 11,
+      "input_sha256": "d30c54238c108002aab22627755894f6b14699a4d67ee8abd7170378b5a73d5d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 12,
+      "input_sha256": "e6e98067b48c170ba630dc9a2d5f3fb3ae831aff2a22c8be93326748da75e899",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 13,
+      "input_sha256": "853ba3755910be2f21bb9d4fbf959340661937c9e168d25c15ac73affe54a95d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 14,
+      "input_sha256": "22af6f07886945faa6856a003c761e9f236191c9dd50495859f20e2153ec57f9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 15,
+      "input_sha256": "7fc32e36a20134124d2cc74b3690f79be1702c5b0e64a6c2b024d3b98ce49e77",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 16,
+      "input_sha256": "6ff2e47074b74fa3376044ead8312be022530db8a59762eb140e897d727f8904",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 17,
+      "input_sha256": "774aa076acca5c550b23ceb6214a9d832a926245a654f46f03677d1378cff95f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 18,
+      "input_sha256": "0f6d024837342a8b991551454c75ef87aaa7657c4d7fb278c0a7b2f455a2bce3",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 19,
+      "input_sha256": "f6d9f304ec3caff91c49828f156c020026c2d3c791125ecaf7c164f20da80c09",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 20,
+      "input_sha256": "c7735e7895d4f590e633f9fa234d375eb3e0d1a4f1cc6bd277cd2a5cbe0964d9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 21,
+      "input_sha256": "e6f9cdcb4a9adf4b541b339a8ce5771c52f0403859a1185a3b55a8b11c08ca80",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 22,
+      "input_sha256": "da9a05667b86383f080245e6047a86866cb217a8b5f65418e102a43500a0f83a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 23,
+      "input_sha256": "ab863c17eaa8d6f50dd53622f6dd499b7e1b442a70ae11e308a32b49953889f5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 24,
+      "input_sha256": "3ed0907ca4cb5541af47c82326d41c046350185f4cbd80d900dc8d0361aaf01d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 25,
+      "input_sha256": "27b6b012ca69812aa692f78aae43726ff153c6c8b0f9af3692d1a3a87d8545e5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    }
+  ],
+  "synthetic_case_count": 22,
+  "synthetic_case_results": [
+    {
+      "name": "minimum",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "both_upper_bounds",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "k_can_exceed_string_length",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "nondivisible_length_still_valid",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "nonpalindrome_still_valid",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "string_above_length",
+      "result": {
+        "status": "invalid",
+        "reason": "s_length"
+      },
+      "passed": true
+    },
+    {
+      "name": "uppercase_not_lowercase_english",
+      "result": {
+        "status": "invalid",
+        "reason": "s_alphabet"
+      },
+      "passed": true
+    },
+    {
+      "name": "non_english_letter",
+      "result": {
+        "status": "invalid",
+        "reason": "s_alphabet"
+      },
+      "passed": true
+    },
+    {
+      "name": "digit_in_string",
+      "result": {
+        "status": "invalid",
+        "reason": "s_alphabet"
+      },
+      "passed": true
+    },
+    {
+      "name": "k_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "k_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "k_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "k_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_string",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_k",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_token",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "decimal_k",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "plus_zeros_blank_edges",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "same_line_tokens",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "interior_blank_line",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "alphabet_violation_before_layout",
+      "result": {
+        "status": "invalid",
+        "reason": "s_alphabet"
+      },
+      "passed": true
+    },
+    {
+      "name": "fullwidth_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "arabic_indic_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "unicode_minus_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    }
+  ],
+  "compatibility_check": "Parsed with Python 3.12 ast feature_version=(3,4); root will verify execution on real Python 3.4."
+}

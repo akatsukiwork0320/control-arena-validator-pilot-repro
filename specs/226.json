@@ -1,0 +1,749 @@
+{
+  "problem_id": "226",
+  "phase": "blinded_phase_1",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "source_file": "problems/226.json",
+  "question_sha256": "3bd915560835c1bb90d928e50d70958855d30ad531d331f907d2fef0d1c29ea8",
+  "validator_file": "validators/p226.py",
+  "validator_sha256": "b17105fbc89831e2d53791829a0d25bdea12373ad7f95943bc7c6a311e422cc9",
+  "constraints": [
+    {
+      "id": "n",
+      "source_quote": "Input will begin with an integer N (1 <= N <= 50)",
+      "rule": "N is in [1,50]."
+    },
+    {
+      "id": "sizes",
+      "source_quote": "Following this is a line with N integers indicating the sizes of the slices (each between 1 and 100000, inclusive)",
+      "rule": "Exactly N sizes, each in [1,100000]."
+    }
+  ],
+  "assumptions_and_ambiguities": [
+    "ASCII signed decimal integer tokens are evaluated numerically. Leading +, leading zeroes, and signed zero are accepted. Non-ASCII integer notation is unverified rather than rejected as a definite specification violation; ASCII decimal/exponent/underscore/malformed forms are invalid integer tokens.",
+    "Numeric and token/domain constraints are checked before layout. Whitespace within a specified line, optional final newline, and blank leading/trailing lines are accepted.",
+    "After semantic checks, moving tokens across specified lines or adding interior blank lines is unverified:layout_ambiguity, not invalid.",
+    "This is a statement-grounded validator, not a proof that the dataset statement perfectly matches the original judge contract. No submitted solutions or secret inputs were inspected."
+  ],
+  "status_contract": {
+    "valid": "All checked semantic constraints and stated line grouping satisfied under documented permissive token policy.",
+    "invalid": "A definite token count, numeric, alphabet, ordering, or graph constraint violation under the stated policy.",
+    "unverified": "Unresolved non-ASCII integer notation, input-layout, or increasing-order strictness. No invalidity claim is made from these cases alone."
+  },
+  "normal_inputs_checked": 70,
+  "normal_input_status_counts": {
+    "valid": 70,
+    "invalid": 0,
+    "unverified": 0
+  },
+  "normal_input_mismatches": [],
+  "normal_input_results": [
+    {
+      "index_zero_based": 0,
+      "input_sha256": "b2250865bd840e14dd2a2ae7696f1c5b543b54cbd089487852ec890658dbc536",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 1,
+      "input_sha256": "fc20ebcf0066235110ce7c87bd47921345442d28fd70af27d83ec40e5b8bfe5f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 2,
+      "input_sha256": "9bba3e6944034b9da29c19d94f5bc07e9212a5372c29121e8835e078365af02a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 3,
+      "input_sha256": "7d9474fc17ca9f8abeed7258854c81c7fe86ad7ffd6128f81da01246633c585d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 4,
+      "input_sha256": "26661f755d71236f482f4a4cdf53d718a19204f9771a4a103db9cf3317dd53b9",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 5,
+      "input_sha256": "e2e7676792775fb3996b3f4227713ffbb241ff27e78a10f193c068fd901b2fb7",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 6,
+      "input_sha256": "7df11ec6b76879fb0abaddf2c8e46ca7efa809802386f8be3df5490b203e2b8d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 7,
+      "input_sha256": "d1da76095a5dd62af42df9f267824a907deeb89ed4aaddd4786314a59cb57de3",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 8,
+      "input_sha256": "c3418057a1b06d086d0b492509b3e116dd88d43e29c6c6aa92c4eef9bb4d1525",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 9,
+      "input_sha256": "365215692fdceb455d7b0ae1d9f8dfbb23b6b349e09c41fdc296cacc1e0ff330",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 10,
+      "input_sha256": "ed75ab296115a4f541609af0c9543f179aac6d508fdd537208619c39dedef65c",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 11,
+      "input_sha256": "a81bef8e20662f980283a6b7f0e2cb16598281b919b336789732a062293f82af",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 12,
+      "input_sha256": "1836a01079aaa39495e5ff68829b862156ece173f535b435056b9e775fe77095",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 13,
+      "input_sha256": "347931fce0531eee354a8665e9e6986bbba078f505ce0e65638f616e9e0ce7b4",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 14,
+      "input_sha256": "e2a61f0586588f2b0de21699b3f61cfef23f5e0924e71a1bba8c7f4422807777",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 15,
+      "input_sha256": "8b5c59ca0e016a611210a0740b39f1aa4ec2ebddbf0adedf1b3f0ea579ce5ba7",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 16,
+      "input_sha256": "484180d4f4a2a29448bf39d5d1cf7cf0823c5637de2d7b57b43b9d290842915f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 17,
+      "input_sha256": "ab91fe4e694590bdc2d3af88b8a6971a0243e7ab687704e39220d698487c0f25",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 18,
+      "input_sha256": "9740ce4e6e2a7c93f63a2edc7fe70a7539b40c723a4a2b7920f6fac0576d9a83",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 19,
+      "input_sha256": "8cd000107682220e2735b4b94399d3b91ee979e6ef66ecce4461fa09169eabba",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 20,
+      "input_sha256": "83e276e4f68f7b3cf508a6084db750549c0d7ff626958ecfda58f17d75e02396",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 21,
+      "input_sha256": "d6842c242ae740884a87e6da05966a5d444ad938cc2d1ab7378c94f926d79799",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 22,
+      "input_sha256": "db30d9750756538daee9c5e21a000e9abf0f81c1eb19b05be9af2f565599cc79",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 23,
+      "input_sha256": "371a1933a985be06b1a5a1c218992eb070f5dbeb9a505e3d49796707c07135ba",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 24,
+      "input_sha256": "a6e67d7eb1498f00f1b2013eba8996fb45f68246dc1da5c768ff653af6f2bd63",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 25,
+      "input_sha256": "8f1378c709dec0c0cd767375191bf2f8db3007e67fdb4656ef9362f2afd3e77f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 26,
+      "input_sha256": "9e211f91043f465fdc383c4efdad8327e014b0522989be4dbe64fd217ac2df70",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 27,
+      "input_sha256": "ae09ef6c2cf4c5b7752c012a6672cd3da2c76bf629f9b9dcf211fa555f2486c7",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 28,
+      "input_sha256": "09a02a17f974a7cf507a55326be71ff197bcfafc50fd03188ebbe9175c96d5a3",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 29,
+      "input_sha256": "b7f36aef42b569c1dfc8aad1cc3ea113ee17fdb55026f8539ecf02bd37f44dca",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 30,
+      "input_sha256": "c8ba3a00b03b5be1198a87601a1f4b1f7576db01ee5154d0baa19e351db28363",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 31,
+      "input_sha256": "0b6eda08ca4c23200bfc469854e568c6204937c63f3d9a63202bdb772f8b44be",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 32,
+      "input_sha256": "7b5555692ac41170bd21ba02b52d4aafc4747deebb9213b134ddae94d2d87a55",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 33,
+      "input_sha256": "04294cf6ac99efeecd80f1c0416ec8583054390c7f4bfd42aaa7e2e210699680",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 34,
+      "input_sha256": "7648bd5036ad157e7b1e4428a58c3abbd2b6c68e35f550049011e2acb2affb9d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 35,
+      "input_sha256": "0b2c818e84fe4d4ceb17febaf0a734bbec8ce1964d5fb91db0001fd1953fd5cd",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 36,
+      "input_sha256": "6a54319d1a2539f0ad11e57a319fcd189ad0676e6111b826aeb2a4963cec117e",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 37,
+      "input_sha256": "8db7423634aac4f043169685e0eec48e8b6591ff5d406bfaa020a24e4032b8fb",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 38,
+      "input_sha256": "df1a47e287a7e8bede1151ae22fb84b3a3afab04bac5819e9fcb78e02559d483",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 39,
+      "input_sha256": "2782ff683c84a412f25aec5c29e6207af5a16da5110f051a77ea934779ffb12b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 40,
+      "input_sha256": "712c1ae15836153c73246b366eb8fbe57148c39c76058dd36e7460c3e903afa5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 41,
+      "input_sha256": "d01a941d1334b838dd714ce8f086e7c7a0128576b9c8125a1e6dfc3b504bf837",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 42,
+      "input_sha256": "4c426275c36b5b40f54fa75627d14d14171c928c9567b1d033c93ad4c49cb3f8",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 43,
+      "input_sha256": "9437d1c2adda3f691ad7991399f7fb6013d2faa9bc995d8e7cef98bc8b71d481",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 44,
+      "input_sha256": "86ca53890b88015b8224ca7cb1d48e9ce34a78dd5198761e5e0fda7be7e3b92a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 45,
+      "input_sha256": "ff285c3dcfe47d0c301d79ec232ca840287ce62f9f58958c18940f39a91517a5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 46,
+      "input_sha256": "7239832bad811bf6118e73dbd2686ee4d4cbde6779091823e9760d7eced9902b",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 47,
+      "input_sha256": "507828ec9e3c119f959e54db275c7d1260ed15416a3a3080ceb354c40cccacbd",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 48,
+      "input_sha256": "6d9f68c0789bcbfcbc9ca1ebe6e87aefbfaa873bf16449f9da915ffafb8a9abb",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 49,
+      "input_sha256": "55163fea490298f59d214f6f5b92eb336686e78e2258829f04ea46ef683a05bf",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 50,
+      "input_sha256": "20f74d76e3813cabf584c9df61620214e1b611f23228ab6f1bbfe18be94217b2",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 51,
+      "input_sha256": "41c18441caa94446e1375d01a98ed0d1363374e0f8328dcb72164a7ab737198f",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 52,
+      "input_sha256": "890a7d5cf8a1237d303d20072d7bf35706bfc73672b63afeabc3f8fdb6b1b468",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 53,
+      "input_sha256": "e8bee9ec003fc54a91cd5fb494c69098cbec0552bd1da6788fcdaba07ffe9939",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 54,
+      "input_sha256": "828eab3e7bd3fd9505e699b449c9bc50f8bf71a365041ce3e7752787ddd18ca3",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 55,
+      "input_sha256": "d481b09ef20d7e6adde9ac9170129dd90fddb02c8a487c09fed3a662a2c2befc",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 56,
+      "input_sha256": "31acf8091394ad1de336a7dcaf6bbb33e550a3dc9e5001d3adb3fa9be168409a",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 57,
+      "input_sha256": "b60f4dd8ca4a1a1fb9f93e275e3cd06f91d155a6e41a2e8031835e53dce6e890",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 58,
+      "input_sha256": "69d08998a99f816d6a20dffac7040f4305e089df579f098878ef5b238f845bf6",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 59,
+      "input_sha256": "be3514168984cda78c2046a655afb6336187eae5057ba5efce19a381dc05a6ab",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 60,
+      "input_sha256": "fc2ec83a4b7b12ffdfc372a57fd07ad333d5cfeab5d14dfd98174e08a665209d",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 61,
+      "input_sha256": "aaa61874d30b39c0c690fbe62665870dfa185b8d3380129f7955a636a7788f7e",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 62,
+      "input_sha256": "7782a79f38e9f5b89e1dc8cd71ede981ce48ea54381781dbec09a2b2a48c5c33",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 63,
+      "input_sha256": "3bf3aef4469197bf665709f9839ee701aeca13145322cd15b6025f9f1404ef75",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 64,
+      "input_sha256": "a9ee9d7472904ce418d261d0bc48690efdb4aeb2a6132c1077a9998810f0fa63",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 65,
+      "input_sha256": "6132b2384330f7b7102928a8333af45f61b3892292d432656b6319a5d1f26390",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 66,
+      "input_sha256": "35992de15a4bdbbf6fac0e36e3b18d7cfa6a841af081f39ccbae2a38c6af8b65",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 67,
+      "input_sha256": "fcbaa1c095096712447109999871a2d3ada6b0460b999e1b4c3b0ceef22688c5",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 68,
+      "input_sha256": "d2de1f0c154d57f6635cefcbd3cb8374fc15482f6abbb54f64b2a24f255c0785",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    },
+    {
+      "index_zero_based": 69,
+      "input_sha256": "0106e2ade4e2decf18334747c7921dc86edd9f2cf838d035ef80ab269ac02bd4",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      }
+    }
+  ],
+  "synthetic_case_count": 18,
+  "synthetic_case_results": [
+    {
+      "name": "minimum",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "maximum_count_and_sizes",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "n_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "n_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "size_below_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "slice_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "size_above_bound",
+      "result": {
+        "status": "invalid",
+        "reason": "slice_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_size",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "extra_size",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "integer_lexical_error",
+      "result": {
+        "status": "invalid",
+        "reason": "integer_token"
+      },
+      "passed": true
+    },
+    {
+      "name": "plus_zeros_spacing",
+      "result": {
+        "status": "valid",
+        "reason": "constraints_satisfied"
+      },
+      "passed": true
+    },
+    {
+      "name": "same_line_tokens",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "split_sizes_across_lines",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "interior_blank_line",
+      "result": {
+        "status": "unverified",
+        "reason": "layout_ambiguity"
+      },
+      "passed": true
+    },
+    {
+      "name": "domain_violation_before_layout",
+      "result": {
+        "status": "invalid",
+        "reason": "slice_range"
+      },
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "result": {
+        "status": "invalid",
+        "reason": "token_count"
+      },
+      "passed": true
+    },
+    {
+      "name": "fullwidth_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "arabic_indic_integer_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    },
+    {
+      "name": "unicode_minus_unverified",
+      "result": {
+        "status": "unverified",
+        "reason": "non_ascii_integer_notation"
+      },
+      "passed": true
+    }
+  ],
+  "compatibility_check": "Parsed with Python 3.12 ast feature_version=(3,4); root will verify execution on real Python 3.4."
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "name": "lower_boundaries",
+    "input": "1\na\na\na\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "length_upper",
+    "input": "1\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "q_upper",
+    "input": "100\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "q_below",
+    "input": "0\n",
+    "expected_status": "invalid",
+    "expected_reason": "q_range"
+  },
+  {
+    "name": "q_above",
+    "input": "101\n",
+    "expected_status": "invalid",
+    "expected_reason": "q_range"
+  },
+  {
+    "name": "s_above_length",
+    "input": "1\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_length"
+  },
+  {
+    "name": "s_uppercase",
+    "input": "1\nA\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "s_alphabet"
+  },
+  {
+    "name": "s_empty",
+    "input": "1\n\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "t_above_length",
+    "input": "1\na\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "t_length"
+  },
+  {
+    "name": "t_uppercase",
+    "input": "1\na\nA\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "t_alphabet"
+  },
+  {
+    "name": "t_empty",
+    "input": "1\na\n\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "p_above_length",
+    "input": "1\na\na\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "expected_status": "invalid",
+    "expected_reason": "p_length"
+  },
+  {
+    "name": "p_uppercase",
+    "input": "1\na\na\nA\n",
+    "expected_status": "invalid",
+    "expected_reason": "p_alphabet"
+  },
+  {
+    "name": "p_empty",
+    "input": "1\na\na\n\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "digits_not_letters",
+    "input": "1\na\n1\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "t_alphabet"
+  },
+  {
+    "name": "unicode_not_latin",
+    "input": "1\na\na\né\n",
+    "expected_status": "invalid",
+    "expected_reason": "p_alphabet"
+  },
+  {
+    "name": "missing",
+    "input": "",
+    "expected_status": "invalid",
+    "expected_reason": "missing_header"
+  },
+  {
+    "name": "missing_string",
+    "input": "1\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "extra_string",
+    "input": "1\na\na\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "token_count"
+  },
+  {
+    "name": "non_integer_q",
+    "input": "1.0\na\na\na\n",
+    "expected_status": "invalid",
+    "expected_reason": "integer_syntax"
+  },
+  {
+    "name": "plus_leading_zero_blank_edges",
+    "input": "\n +001 \r\n a \t\n z\n a\n\n",
+    "expected_status": "valid"
+  },
+  {
+    "name": "same_line_strings",
+    "input": "1\na a a\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "all_one_line",
+    "input": "1 a a a\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "internal_blank_line",
+    "input": "1\na\n\na\na\n",
+    "expected_status": "unverified",
+    "expected_reason": "layout_ambiguity"
+  },
+  {
+    "name": "domain_error_precedes_layout",
+    "input": "1 a A a\n",
+    "expected_status": "invalid",
+    "expected_reason": "t_alphabet"
+  }
+]

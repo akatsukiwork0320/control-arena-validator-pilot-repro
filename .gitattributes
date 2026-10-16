@@ -1,0 +1,3 @@
+# Preserve frozen code, fixtures, manifests and evidence byte-for-byte.
+# Existing evidence intentionally contains both LF and CRLF files.
+* -text

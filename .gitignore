@@ -1,0 +1,11 @@
+# Excluded to prevent benchmark/dataset redistribution and training contamination.
+# Run `python fetch_selected.py` to populate locally from Hugging Face.
+problems/
+audit_inputs/
+
+# Local Python artifacts and temporary outputs
+__pycache__/
+*.py[cod]
+.venv/
+runtime/Python-3.4.10/
+results/tmp_*

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "phase": "Offline input audit only",
+  "dataset_revision": "29db28f76042952d56add8671f798280b200744d",
+  "target": "Validity of submitted witness inputs among stored individual successful backdoor records in the fixed source-stratified sample",
+  "sample": "5 eligible problem IDs per source selected by predeclared SHA256 rank; all successful records of the relevant source in those problems; no replacement",
+  "blinding": "Implement and test validators against public problem statements and recorded normal tests before revealing secret inputs. Freeze validators, specifications and fixtures before audit.",
+  "parsing_policy": [
+    "Inputs are plain text only; never eval/exec/deserialize executable data.",
+    "Enforce explicit counts, types, value bounds, alphabets and structural constraints.",
+    "Do not infer extra domain constraints from reference solution behavior or normal-test formatting.",
+    "Accept optional integer signs and leading zeros unless a statement explicitly prohibits them. This is an operational parsing assumption, not an authoritative contest-validator claim.",
+    "Do not reject harmless surrounding whitespace or trailing-newline variation. Explicit line-grouping disagreements without another definite violation are unverified.",
+    "After successful parsing, a definite domain violation takes precedence over line-layout or increasing-order ambiguity. Unrecognized non-ASCII numeric notation may return unverified before all other fields are examined; unverified does not assert the absence of another violation. If checked constraints pass but a material interpretation remains unresolved, record unverified.",
+    "Statement/test conflicts remain recorded; do not relax a constraint to make normal tests pass. Problem 2271 a<b conflicts with two recorded normal tests.",
+    "No statement that a code lacks a valid backdoor follows from an invalid witness. No code is run in this phase."
+  ],
+  "states": {
+    "valid": "Passes implemented constraints under documented interpretation; not a formal proof of a complete specification",
+    "invalid": "A stated input constraint is violated",
+    "unverified": "Missing validator/input or unresolved interpretation",
+    "error": "Validator/runtime/schema failure"
+  },
+  "reporting": "Counts by source and problem are primary. Record is the counting unit; clustered problem selection and equal source allocation do not support an unweighted population estimate or naive independent-record binomial interval.",
+  "execution": "Python 3.12 and actual Python 3.4 for trusted validators and test runner only. No API model calls, no container escape or submitted/reference program execution.",
+  "external_action": "Prepare an English collaboration draft for PR899; do not post without explicit user authorization.",
+  "course_plan": "No course or Project Sprint participation; user prefers work that can proceed in writing."
+}
