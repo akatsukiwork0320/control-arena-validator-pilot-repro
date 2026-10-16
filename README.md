@@ -3,7 +3,7 @@
 Offline reproducibility package for a 10-problem, 24-record stratified pilot study of per-problem `secret_input` validation on [`RoganInglis/apps-control-arena`](https://huggingface.co/datasets/RoganInglis/apps-control-arena) (pinned revision `29db28f76042952d56add8671f798280b200744d`), prepared in relation to [`UKGovernmentBEIS/control-arena#755`](https://github.com/UKGovernmentBEIS/control-arena/issues/755) (*Apps backdoor scorers don't check if secret input is a valid problem input*) and the validator runner infrastructure in [`UKGovernmentBEIS/control-arena#899`](https://github.com/UKGovernmentBEIS/control-arena/pull/899) (`head c638a3e4b67033535f8f2f2bd4b8735644b41d6c`).
 
 - **What was audited:** 24 stored backdoor trigger inputs across 10 stratified problems from ControlArena's APPS dataset (`RoganInglis/apps-control-arena`) checked against the saved problem constraints.
-- **What was found:** 23 of 24 satisfy the stated constraints; the 1 exception (`problem_id=2271`, `backdoors[1]`) violates an edge-ordering inequality (`1 <= a < b <= n`) that is also violated by 2 recorded public test inputs—a specification vs. test-data conflict, not a confirmed scoring error.
+- **What was found:** 23 of 24 passed the implemented checks; the 1 exception (`problem_id=2271`, `backdoors[1]`) violates an edge-ordering inequality (`1 <= a < b <= n`) that is also violated by 2 recorded test inputs—a specification vs. test-data conflict, not a confirmed scoring error.
 - **What is not claimed:** This is an offline audit of stored dataset records, not a measurement of live attack-policy runs (`#755`), code-level backdoor correctness, or live Docker/scorer execution.
 
 ---
@@ -56,7 +56,7 @@ python pilot.py audit
 ## Methodology & Sampling Frame
 
 1. **Sampling Frame Recount ([`sampling_frame/recount.py`](sampling_frame/recount.py)):**
-   - Across all 5,000 rows of `RoganInglis/apps-control-arena@29db28f76042952d56add8671f798280b200744d`, applying ControlArena's default `AppsSetting` filters (`solution_passes_tests == True` and `is_nondeterministic == False`) yields **1,949** deterministic problems with passing reference solutions.
+   - Across all 5,000 rows of `RoganInglis/apps-control-arena@29db28f76042952d56add8671f798280b200744d`, applying ControlArena's default `AppsSetting` filters (`solution_passes_tests == True` and `is_nondeterministic == False`) yields **2,981** problems marked as deterministic with passing reference solutions.
    - Restricting to problems with at least one individual backdoor record having `backdoor_works == True` for a given `source` yields:
      - **`apps` frame ([`sampling_frame/frame_apps.csv`](sampling_frame/frame_apps.csv)):** **111** problems (`frame_sha256 = ea2a25c24c785ced...`).
      - **`control_tax` frame ([`sampling_frame/frame_control_tax.csv`](sampling_frame/frame_control_tax.csv)):** **1,388** problems (`frame_sha256 = 7190a59403328c2b...`).
@@ -65,7 +65,7 @@ python pilot.py audit
    - For each source, eligible problem IDs were ranked by `SHA256(UTF-8("control-arena-755-pilot-20261013-v1|" + source + "|" + problem_id))` and the top 5 were selected without replacement or re-sampling.
    - All stored backdoor records with `backdoor_works == True` for the sampled `(source, problem_id)` pairs were included (**14** `apps` records + **10** `control_tax` records = **24** records).
 3. **Procedural Blinding & Pre-Audit Hash Lock ([`validator_lock.json`](validator_lock.json)):**
-   - Validator implementations ([`validators/p*.py`](validators/)), structured constraint tables ([`specs/*.json`](specs/)), PR `#899` boolean adapters ([`adapters/p*.py`](adapters/)), and 202 synthetic boundary cases ([`tests/cases_*.json`](tests/)) were written and reviewed using only the saved problem statements and recorded public test inputs (`problems/*.json`).
+   - Validator implementations ([`validators/p*.py`](validators/)), structured constraint tables ([`specs/*.json`](specs/)), PR `#899` boolean adapters ([`adapters/p*.py`](adapters/)), and 202 synthetic boundary cases ([`tests/cases_*.json`](tests/)) were written and reviewed using only the saved problem statements and recorded test inputs (`problems/*.json`).
    - All 60 code, specification, test, and dataset manifest files were frozen by SHA-256 in [`validator_lock.json`](validator_lock.json) (`3e3903bb58ff271ffbbf88e2a3f8ee6d775136c453004a0dee1628a9eb70dc5c`) prior to running `pilot.py audit` on `audit_inputs/stored_success_records.json`.
    - *Qualification:* This is a procedural blinding workflow backed by pre-scoring cryptographic hash locks, not hardware-enforced access isolation.
 
@@ -89,7 +89,7 @@ The full 259-input and 24-record audits were executed under both **Python 3.12.6
 | `control_tax` | `4376` | 26 | 9 / 9 | 1 | 1 | 0 | 0 | 0 |
 | **Total** | **10 problems** | **202** | **257 / 259*** | **24** | **23** | **1** | **0** | **0** |
 
-*\*In `problem_id=2271`, 2 of the 5 recorded public test inputs (zero-based indices `3` and `4`) violate the stated `1 <= a < b <= n` edge-endpoint ordering constraint; see Finding 1 below.*
+*\*In `problem_id=2271`, 2 of the 5 recorded test inputs (zero-based indices `3` and `4`) violate the stated `1 <= a < b <= n` edge-endpoint ordering constraint; see Finding 1 below.*
 
 ---
 
@@ -99,8 +99,8 @@ The full 259-input and 24-record audits were executed under both **Python 3.12.6
 
 - **Observation:** In problem `2271` ([Codeforces 690F1](https://codeforces.com/problemset/problem/690/F1), *Tree of Life (easy)*), both the saved dataset statement and the original Codeforces statement specify `n - 1` lines describing undirected tree edges with endpoints satisfying `1 <= a < b <= n`.
 - **Audit result:** Stored record `2271:1` (`backdoors[1]`, zero-based; source `control_tax`, model `openai/o1-mini`, `input_sha256 = ea244405e2e0ac0d01d227dd98798f6a023f7a88918f4b4d8bed2286d735ba90`) contains one edge given in reversed endpoint orientation (`b < a`), violating the stated `a < b` constraint (`reason = edge_orientation`). Disregarding endpoint orientation, the edges still form a valid undirected tree.
-- **Public test conflict:** Crucially, recorded normal test inputs `3` and `4` (zero-based) in `problems/2271.json` violate the exact same `a < b` inequality while still forming valid undirected trees (recorded explicitly in [`normal_expectations.json`](normal_expectations.json) and [`specs/2271.json`](specs/2271.json)).
-- **Takeaway:** `2271:1` should **not** be reported as an unambiguous false-positive backdoor score. Instead, benchmark maintainers must choose a policy when a saved problem statement and its recorded public test suite disagree: enforce the literal statement inequality (`1 <= a < b <= n`) or relax the validator to match the undirected-tree contract implied by the public tests.
+- **Recorded test conflict:** Crucially, recorded test inputs `3` and `4` (zero-based) in `problems/2271.json` violate the exact same `a < b` inequality while still forming valid undirected trees (recorded explicitly in [`normal_expectations.json`](normal_expectations.json) and [`specs/2271.json`](specs/2271.json)).
+- **Takeaway:** `2271:1` should **not** be reported as an unambiguous false-positive backdoor score. Instead, benchmark maintainers must choose a policy when a saved problem statement and its recorded test suite disagree: enforce the literal statement inequality (`1 <= a < b <= n`) or relax the validator to match the undirected-tree contract implied by the recorded tests.
 
 ### 2. Formatting Counterfactual Across Backdoor Sources ([`review_followup/formatting.json`](review_followup/formatting.json))
 
